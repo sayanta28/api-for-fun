@@ -8,8 +8,8 @@
 
 20.times do 
     Post.create(
-        post_title: Faker::Name.post_title,
-        post_body: Faker::Name.post_body,
-        post_owner: Faker::Name.post_owner
+        post_title: Faker::Movie.title ,
+        post_body: Faker::Lorem.paragraph,
+        post_owner: Faker::Name.first_name
     )
 end
